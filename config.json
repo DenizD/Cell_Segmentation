@@ -1,0 +1,37 @@
+{
+	"classes": ["background", "cell_center", "cell_innerboundary", "cell_outerboundary"],	
+		
+	"trainImagesPath": "./images/trainImages",
+	"trainAnnotationsPath": "./images/trainAnnotations/",
+	"trainPatchesPath": "./images/trainPatches",
+	"valImagesPath": "./images/valImages",
+	"valAnnotationsPath": "./images/valAnnotations/",
+	"valPatchesPath": "./images/valPatches",
+
+	"numSamplesTrain": 
+	{
+	"background":1000, 
+	"cell_center":1000, 
+	"cell_innerboundary":1000, 
+	"cell_outerboundary":1000
+	},
+	"numSamplesVal": 
+	{
+	"background":100, 
+	"cell_center":100, 
+	"cell_innerboundary":100, 
+	"cell_outerboundary":100
+	},
+
+	"patchWidth": 64,
+	"patchHeight": 64,
+
+	"trainProtoFile": "./model/train_val.prototxt", 
+	"solverProtoFile": "./model/solver.prototxt", 
+	"deployProtoFile": "./model/deploy.prototxt", 
+	"weightFile": "./model/weights/model_iter_10000.caffemodel", 
+
+	"meanVal": [173, 185, 159],
+
+	"testImageFile": "./images/testIm.jpg"
+}
